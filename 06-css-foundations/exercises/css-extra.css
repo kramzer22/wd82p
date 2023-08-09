@@ -1,0 +1,25 @@
+body {
+  background-color: #c4c0c0;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #625f5f;
+  background-color: #e4e4e4;
+  text-align: center, left;
+
+  padding: 20px;
+}
+
+ul {
+  color: #ffffff;
+  font-size: 13px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  padding: 4px;
+}
