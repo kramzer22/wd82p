@@ -1,0 +1,180 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Start of header */
+
+.menu-container {
+  padding: 20px 100px 60px;
+  color: #ffff;
+  background-color: #1f2937;
+}
+
+.menu-item {
+  margin: 0 auto;
+  list-style-type: none;
+
+  /* border: 1px solid #ffff; */
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-link {
+  display: flex;
+  gap: 20px;
+  font-size: smaller;
+}
+
+.link-item {
+  color: #6d747d;
+  text-decoration: none;
+}
+
+/* End of header */
+
+/* Start of page introduction */
+
+.introduction-container {
+  padding: 0px 100px 100px 100px;
+  color: #6d747d;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.introduction-section {
+  flex: 1;
+}
+
+.introduction-header {
+  font-size: 32px;
+  color: #ffff;
+}
+
+.introduction-content {
+  padding-bottom: 10px;
+}
+
+.signup {
+  color: #ffff;
+  background-color: #3b82f6;
+  text-align: center;
+  width: 120px;
+  padding: 6px 0px;
+  border-radius: 6px;
+}
+
+.introduction-02 {
+  display: flex;
+  justify-content: right;
+}
+
+.introduction-placeholder {
+  color: #ffff;
+  background-color: #6d747d;
+  height: 180px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End of page introduction */
+
+/* Start of hero section */
+
+.hero-container {
+  text-align: center;
+  padding: 10px 100px 100px 100px;
+}
+
+.hero-title {
+  padding: 20px;
+  font-weight: 700;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+}
+
+.hero-box {
+  width: 120px;
+}
+
+.hero-item {
+  border: 3px solid #3b82f6;
+  border-radius: 10px;
+  height: 120px;
+}
+
+.hero-subtext {
+  padding-top: 6px;
+  font-size: small;
+  text-align: center;
+}
+
+/* End of hero section */
+
+.testimonial {
+  padding: 100px 200px;
+  background-color: #e5e7eb;
+}
+
+.testimonial-body {
+  color: #676e78;
+  font-size: x-large;
+  font-style: italic;
+}
+
+.testimonial-name {
+  color: #252f3c;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.footer-container {
+  padding: 50px 100px;
+}
+
+.footer {
+  padding: 20px 40px;
+  background-color: #3b82f6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section-01 {
+  color: #e5e7eb;
+  font-size: smaller;
+  flex: 2;
+}
+
+.footer-section-02 {
+}
+
+.signup-footer {
+  color: #e5e7eb;
+  border: 2px solid #e5e7eb;
+  background-color: #3b82f6;
+  text-align: center;
+  width: 120px;
+  padding: 4px 0px;
+  border-radius: 6px;
+}
+
+.footer-last {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  font-size: small;
+}
