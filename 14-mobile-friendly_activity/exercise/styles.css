@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  box-shadow: rgba(82, 74, 74, 0.2) 0 2px 3px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.header-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.profile-pic {
+  background-color: #fcba03;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-detail p:first-child {
+  font-size: smaller;
+}
+
+.profile-detail p:last-child {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7em;
+}
+
+.drop-menu-switch:hover {
+  cursor: pointer;
+}
+
+.drop-menu-switch:hover .drop-menu {
+  display: flex;
+}
+
+/* Mobile main display */
+
+.main-mobile {
+  padding-bottom: 0.1em;
+  background-color: #e3e7f0;
+}
+
+.mobile-content h3 {
+  background-color: #6b6764;
+
+  padding: 1em 1em;
+}
+
+.mobile-project-item {
+  background-color: #ffffff;
+  border-left: 4px solid #fcba03;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+
+  margin: 1em auto;
+  padding: 1.6em;
+  gap: 2em;
+}
+
+.mobile-project-item div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.mobile-project-item div:first-child p {
+  min-height: 92px;
+  max-height: 92px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-project-item div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 1em;
+}
+
+/* dropdown menu */
+
+.drop-menu {
+  background-color: #1c8fd4;
+
+  width: calc(100% - 110px);
+  height: calc(100% - 72px);
+  padding: 3em 1em;
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+
+  box-shadow: rgba(82, 74, 74, 0.2) -3px 0 3px;
+}
+
+.drop-menu ul {
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  padding: 0 1em;
+
+  gap: 1em;
+}
+
+/* .drop-menu ul:last-child {
+  padding-bottom: 2em;
+} */
+
+.drop-menu .fa-solid {
+  width: 20px;
+  text-align: center;
+}
+
+.drop-menu li {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 2em;
+}
