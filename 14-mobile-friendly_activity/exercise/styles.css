@@ -65,6 +65,8 @@
 }
 
 .mobile-content h3 {
+  color: #ffffff;
+  box-shadow: rgba(82, 74, 74, 0.3) 0 4px 4px;
   background-color: #6b6764;
 
   padding: 1em 1em;
@@ -100,6 +102,27 @@
   flex-direction: row;
   justify-content: right;
   gap: 1em;
+}
+
+.mobile-announcement {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-announcement {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em 1em;
+}
+
+.section-announcement p {
+  padding-bottom: 2em;
+}
+
+.section-announcement hr {
+  color: #6b6764;
 }
 
 /* dropdown menu */
