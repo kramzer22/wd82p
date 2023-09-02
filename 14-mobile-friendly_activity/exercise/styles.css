@@ -206,7 +206,7 @@
   background-color: #fcba03;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 960px) {
+@media only screen and (min-width: 600px) and (max-width: 960px) {
   .main-container {
     display: grid;
     grid-template-columns: 7fr 3fr;
@@ -285,7 +285,7 @@
 .drop-menu {
   background-color: #1c8fd4;
 
-  width: calc(100% - 110px);
+  width: 16em;
   height: calc(100% - 78px);
   padding: 3em 1em;
 
