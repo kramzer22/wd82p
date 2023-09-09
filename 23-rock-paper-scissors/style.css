@@ -87,6 +87,10 @@
   grid-row: 1 / 2;
 }
 
+.player img {
+  transform: scaleX(-1);
+}
+
 .computer {
   grid-column: 2 / 3;
   grid-row: 1 / 2;

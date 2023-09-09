@@ -121,8 +121,7 @@ const displayResult = (result, playerMove, computerMove) => {
   playerTurn.setAttribute("src", moveList[playerMove]);
   computerTurn.setAttribute("src", moveList[computerMove]);
   if (playerMove === 2) {
-    playerTurn.style.transform = "rotate(-180deg)";
-    playerTurn.style.transform = " transform: scaleY(1);";
+    playerTurn.style.transform = "rotate(-180deg) scaleY(-1)";
     console.log("triggered");
   } else {
     playerTurn.style.transform = "rotate(90deg)";
@@ -132,7 +131,7 @@ const displayResult = (result, playerMove, computerMove) => {
     console.log("triggered");
     computerTurn.style.transform = "rotate(-10deg)";
   } else {
-    computerTurn.style.transform = "rotate(-90deg)";
+    computerTurn.style.transform = "rotate(-90deg) scaleX(-1)";
   }
 };
 
