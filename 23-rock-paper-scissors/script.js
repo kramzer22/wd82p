@@ -2,14 +2,14 @@ const moveRock = document.getElementById("move-rock");
 const movePaper = document.getElementById("move-paper");
 const moveScissors = document.getElementById("move-scissors");
 
-const moveList = ["ROCK", "PAPER", "SCISSORS"];
-
 const playerTurn = document.getElementById("player-turn");
 const computerTurn = document.getElementById("computer-turn");
 
 const playerScore = document.getElementById("player-score");
 const tieScore = document.getElementById("tie-score");
 const computerScore = document.getElementById("computer-score");
+
+const moveList = ["ROCK", "PAPER", "SCISSORS"];
 
 let playerScoreValue = 0;
 let tieScoreValue = 0;
