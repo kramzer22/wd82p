@@ -13,7 +13,7 @@ const playerScore = document.getElementById("player-score");
 const tieScore = document.getElementById("tie-score");
 const computerScore = document.getElementById("computer-score");
 
-const moveList = ["ROCK", "PAPER", "SCISSORS"];
+const moveList = ["images/rock.svg", "images/paper.svg", "images/scissors.svg"];
 
 let playerScoreValue = 0;
 let tieScoreValue = 0;
@@ -38,11 +38,9 @@ const startGame = () => {
   tieScore.textContent = "0";
   computerScore.textContent = "0";
 
-  playerTurn.textContent = "#";
-  computerTurn.textContent = "#";
-
   startGameContainer.style.opacity = "0";
   setTimeout(() => setPopupToHidden(), 400);
+  console.clear();
   console.log("game start");
 };
 
@@ -50,7 +48,7 @@ function setPopupToHidden() {
   startGameContainer.style.display = "none";
 }
 
-function setPopupToBlock() {
+function setPopupOpacity() {
   startGameContainer.style.opacity = "1";
 }
 
@@ -111,21 +109,35 @@ const displayResult = (result, playerMove, computerMove) => {
     computerScore.textContent = computerScoreValue;
   }
 
-  playerTurn.textContent = moveList[playerMove];
-  computerTurn.textContent = moveList[computerMove];
+  playerTurn.setAttribute("src", moveList[playerMove]);
+  computerTurn.setAttribute("src", moveList[computerMove]);
+  if (playerMove === 2) {
+    playerTurn.style.transform = "rotate(-180deg)";
+    playerTurn.style.transform = " transform: scaleY(1);";
+    console.log("triggered");
+  } else {
+    playerTurn.style.transform = "rotate(90deg)";
+  }
+
+  if (computerMove === 2) {
+    console.log("triggered");
+    computerTurn.style.transform = "rotate(-10deg)";
+  } else {
+    computerTurn.style.transform = "rotate(-90deg)";
+  }
 };
 
 const endGame = (result) => {
   if (result === true) {
     startGameMessage.textContent = "YOU WIN!";
+    console.log("game end: you win!");
   } else {
     startGameMessage.textContent = "YOU LOSE!";
+    console.log("game end: you lose!");
   }
 
   startGameButton.textContent = "PLAY AGAIN";
 
   startGameContainer.style.display = "block";
-  setTimeout(() => setPopupToBlock(), 400);
-
-  console.log("game start");
+  setTimeout(() => setPopupOpacity(), 400);
 };
