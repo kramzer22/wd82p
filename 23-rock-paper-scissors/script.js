@@ -55,7 +55,16 @@ function setPopupOpacity() {
 startGameButton.addEventListener("click", startGame);
 
 const getComputerMove = () => {
-  let computerMove = Math.round(Math.random() * (moveList.length - 1));
+  let computerMove;
+  let tempComputerMove = Math.random() * moveList.length;
+  console.log(tempComputerMove);
+  if (tempComputerMove < 1) {
+    computerMove = 0;
+  } else if (tempComputerMove < 2) {
+    computerMove = 1;
+  } else {
+    computerMove = 2;
+  }
   console.log("Computer move: " + moveList[computerMove]);
 
   return computerMove;
