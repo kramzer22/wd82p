@@ -122,14 +122,14 @@ const displayResult = (result, playerMove, computerMove) => {
   computerTurn.setAttribute("src", moveList[computerMove]);
   if (playerMove === 2) {
     playerTurn.style.transform = "rotate(-180deg) scaleY(-1)";
-    console.log("triggered");
+    // console.log("triggered");
   } else {
     playerTurn.style.transform = "rotate(90deg)";
   }
 
   if (computerMove === 2) {
-    console.log("triggered");
-    computerTurn.style.transform = "rotate(-10deg)";
+    // console.log("triggered");
+    computerTurn.style.transform = "rotate(0deg)";
   } else {
     computerTurn.style.transform = "rotate(-90deg) scaleX(-1)";
   }
