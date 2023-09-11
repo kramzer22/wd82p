@@ -5,9 +5,9 @@ const reverseString = (val) => {
   } else {
     let arrayString = val.split("");
     console.log(arrayString);
-    for (let i = 0; i < val.length - i; i++) {
-      const tempValue = arrayString[val.length - i];
-      arrayString[val.length - i] = arrayString[i];
+    for (let i = 0; i < val.length - i - 1; i++) {
+      const tempValue = arrayString[val.length - i - 1];
+      arrayString[val.length - i - 1] = arrayString[i];
       arrayString[i] = tempValue;
     }
     isError = false;
