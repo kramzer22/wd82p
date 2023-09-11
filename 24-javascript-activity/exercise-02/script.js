@@ -1,4 +1,4 @@
-const factorialNumber = (a) => {
+const factorial = (a) => {
   try {
     const val = parseInt(a);
 
@@ -28,7 +28,7 @@ let isError = false;
 function main() {
   const factorialVal = prompt("Enter a number: ");
   console.log("input value: " + factorialVal);
-  console.log(factorialNumber(factorialVal));
+  console.log(factorial(factorialVal));
 
   if (isError) {
     main();
