@@ -1,18 +1,18 @@
 const isPalindrome = (val) => {
-  if (val.length % 2 === 1) {
-    const validChars = "abcdefghijklmnopqrstuvwxyz";
-    const lowerString = val.toLowerCase();
-    console.log(lowerString);
-    const arrayString = lowerString.split("");
-    let cleanString = [];
-    console.log(cleanString);
-    for (let i = 0; i < arrayString.length; i++) {
-      if (validChars.includes(arrayString[i])) {
-        cleanString.push(arrayString[i]);
-        console.log(cleanString);
-      }
+  const validChars = "abcdefghijklmnopqrstuvwxyz";
+  const lowerString = val.toLowerCase();
+  console.log(lowerString);
+  const arrayString = lowerString.split("");
+  let cleanString = [];
+  console.log(cleanString);
+  for (let i = 0; i < arrayString.length; i++) {
+    if (validChars.includes(arrayString[i])) {
+      cleanString.push(arrayString[i]);
+      console.log(cleanString);
     }
+  }
 
+  if (cleanString.length % 2 === 1) {
     for (let i = 0; i < cleanString.length - i - 1; i++) {
       if (cleanString[i] != cleanString[cleanString.length - i - 1]) {
         console.log(
@@ -21,7 +21,6 @@ const isPalindrome = (val) => {
         return false;
       }
     }
-
     return true;
   } else {
     return false;
