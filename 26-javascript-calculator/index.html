@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="grid-container">
+        <div class="input-conatiner">
+          <div id="history-container" class="history-container"></div>
+          <input
+            id="entry"
+            class="entry"
+            type="text"
+            placeholder="0"
+            maxlength="15"
+          />
+        </div>
+
+        <div class="control-container">
+          <button class="btn navigation">◄</button>
+          <button id="select" class="btn">OK</button>
+          <button class="btn navigation">►</button>
+        </div>
+
+        <button id="clear" class="btn">CE</button>
+        <button id="clear-all" class="btn">C</button>
+        <button id="delete" class="btn">DEL</button>
+        <button class="btn operator">/</button>
+        <button class="btn num">7</button>
+        <button class="btn num">8</button>
+        <button class="btn num">9</button>
+        <button class="btn operator">*</button>
+        <button class="btn num">4</button>
+        <button class="btn num">5</button>
+        <button class="btn num">6</button>
+        <button class="btn operator">-</button>
+        <button class="btn num">1</button>
+        <button class="btn num">2</button>
+        <button class="btn num">3</button>
+        <button class="btn operator">+</button>
+        <button class="btn num zero">0</button>
+        <button class="btn num dot">.</button>
+        <button id="equals" class="btn">=</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
